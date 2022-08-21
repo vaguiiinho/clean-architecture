@@ -1,9 +1,11 @@
-# ddd-pattenrs
+# clean-architecture
 
 install Dockerker
 
-docker run -d --name clean-architecture -v patchProject/ddd-pattenrs/:/app -w /app node tail -f /dev/null
+docker-compose up -d --build
+
+exec  -it app bash
 
 npm install
+
 npm run test
-# clean-architecture
